@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <p id="logo" class="header">Cafè NEST</p>
+        <div id="header-inner">
+        <nav>
+            <p>About</p>
+            <p>Menu</p>
+            <p>Access</p>
+        </nav>
+        <p id="button-reserve">Reserve</p>
+        </div>
+
+    </header>
+    <main>
+        <section id="hero">
+        <!--絶対値を使って画像の上に文字を載せる。z-indexを使って優先順位を定義-->
+        <img src="img/hero.png">
+        <div class="hero-content">
+        <h1>Cafè NEST</h1>
+        <p>A quiet place for your everyday.<br>
+        自分だけの時間を、少しだけ大切に。</p>
+        <a href="#menu" id="hero-text">Menuを見る　→</a>
+        </div>
+        </section>
+
+        <section id="about">
+            <img src="img/cafe_interior.png">
+            <div id="about-text">
+                <h2><span class="underline-ab">Ab</span>out</h2> <!-- Abの部分だけ下線をｃｓｓで引く-->
+                <p>Cafè NESTは、静かに過ごしたい人のための<br>
+                小さなカフェです。<br>
+            読書をしたり、仕事をしたり、何もせずに過ごしたり。<br>
+        それぞれの時間を自由に楽しめる場所を目指しています。</p>
+            </div>
+        </section>
+
+        <section id="menu">
+            <div class="menu-inner">
+                
+            <div class="menu-header">
+            <h2><span class="underline-me">Me</span>nu</h2>
+        <div id="menu-txt">
+            <p>All</p>
+            <p>Drink</p>
+            <p>Food</p>
+            </div>
+        </div>
+
+            <div id="menu-img">
+
+                <div class="menu-card">
+                <img src="img/coffee.png">
+
+                    <dl id="coffee">
+                        <dt>ブレンドコーヒー</dt>
+                        <dd>Drink</dd>
+                        <dd>￥500</dd>
+                    </dl>
+                </div>
+
+                <div class="menu-card">
+                    <img src="img/latte.png">
+                    <dl id="latte">
+                        <dt>カフェラテ</dt>
+                        <dd>Drink</dd>
+                        <dd>￥600</dd>
+                    </dl>
+                </div>
+                
+                <div class="menu-card">
+                <img src="img/tea.png">
+                <dl>
+                    <dt>紅茶</dt>
+                    <dd>Drink</dd>
+                    <dd>￥500</dd>
+                </dl>
+        </div>
+
+                <div class="menu-card">
+                <img src="img/cheesecake.png">
+                <dl>
+                    <dt>チーズケーキ</dt>
+                    <dd>Food</dd>
+                    <dd>￥650</dd>
+                </dl>
+                </div>
+
+                <div class="menu-card">
+                <img src="img/chocolat_cake.png">
+                <dl>
+                    <dt>チョコレートケーキ</dt>
+                    <dd>Food</dd>
+                    <dd>￥650</dd>
+                </dl>
+                </div>
+
+                <div class="menu-card">
+                <img src="img/toast.png">
+                <dl>
+                    <dt>トースト</dt>
+                    <dd>Food</dd>
+                    <dd>￥700</dd>
+                </dl>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+        <section id="faq">
+                    <img src="img/cafe_interior.png">
+                    
+                    <div class="inner-faq">
+                        <h2><span class="underline-fa">FA</span>Q</h2>
+
+                    <div id="wrapper-faq">
+                       <div class="faq-card">
+                        <div class="faq-content">
+                            <h3>Q.Wi-Fiはありますか？</h3>
+                            <p>A.無料Wi-Fiをご利用いただけます。</p>
+                        </div>
+                        <span class="faq-icon">v</span>
+                        </div>
+
+                    <div class="faq-card">
+                        <div class="faq-content">
+                        <h3>Q.電源はありますか</h3>
+                        <p>A.一部の席に電源をご用意しています。</p>
+                        </div>
+                        <span class="faq-icon">v</span>
+                    </div>
+
+                    <div class="faq-card">
+                        <div class="faq-content">
+                        <h3>Q.予約できますか？</h3>
+                        <p>A.お電話またはＷｅｂフォームからご予約いただけます。</p>
+                    </div>
+                    <span class="faq-icon">v</span>
+                </div>
+            </div>
+            
+            </div>
+                </section>
+
+                <div id="under">
+                <section id="access">
+                    <h2>Access</h2>
+                    <h3>Cafè NEST</h3>
+                    <p>東京都○○区○○1-2-3<br>
+                        営業時間 10:00~20:00<br>
+                        定休日 火曜日</p>
+                        
+                        <img src="" alt="map">
+                </section>
+                
+                <section id="contact">
+                        
+                        <form>
+                            <div class="wrapper-form">
+                            <p class="inner-form">名前</p>
+                            <input id="input-name"  type="text" name="username" placeholder="例）山田 太郎">
+                                </div>
+                                <div class="wrapper-form">
+                            <p class="inner-form">メールアドレス</p>
+                            <input id="input-email" type="email" name="usermail" placeholder="例）cafenest@gmail.com">
+                                    </div>
+                                    <div class="wrapper-form">
+                            <p class="inner-form">お問い合わせ内容</p>
+                            <textarea id="inquire" name="contact" placeholder="ご自由にご記入ください"></textarea>
+                                        </div>
+                            <button id="send">送信</button>
+                        </form>
+                </section>
+                </div>
+
+                
+    </main>
+    <footer>
+                    <div id="footer">
+
+                        <p id="footer-logo">Cafè NEST</p>
+
+                        <div id="footer-menu">
+                            <p>About</p>
+                            <p>Menu</p>
+                            <p>Access</p>
+                        </div>
+
+                        <div id="icon">
+                            <img src="img/instagram.png">
+                            <img src="img/x.png">
+                        </div>
+
+                        <p id="copy-right">©2025 Cafè NEST.All nights reserved.</p>
+                    </div>
+                </footer>
+
+</body>

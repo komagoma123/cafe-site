@@ -473,6 +473,20 @@ h3{
     gap: 50px;
 }
 
+#footer-about{
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer-menu{
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer-access{
+    color: #fff;
+    text-decoration: none;
+}
 
 
 #icon img{
@@ -487,17 +501,54 @@ h3{
 }
 
 @media screen and (max-width: 1100px) {
-    #menu-img {
-        display: grid;
-        grid-template-columns: repeat(2,492px);/* 340pxのカードを3列並べる（入らなくなったら自動で折り返し） */
-        justify-content: center;                /* ★ コンテナ全体を中央に配置する */
-        gap: 80px 20px;                         /* 上下の隙間 30px, 左右の隙間 20px */
+    @media screen and (max-width: 1100px) {
+    /* メニュー全体の親要素：横幅いっぱいに広げて中身を中央に寄せる */
+    .menu-inner {
+        width: 100%;
         max-width: 1100px;
         margin: 0 auto;
+        padding: 10px 20px 40px;
+        box-sizing: border-box;
+    }
+
+    #menu-img {
+        display: grid;
+        /* カード幅を少しコンパクトにするか、画面幅に合わせて収まるように調整します */
+        grid-template-columns: repeat(2, minmax(280px, 460px)); 
+        justify-content: center;                /* グリッド全体を中央に配置 */
+        gap: 40px 20px;                         /* 上下の隙間、左右の隙間 */
+        width: 100%;
+        max-width: 1000px;                      /* 2列が綺麗に収まる最大幅 */
+        margin: 0 auto;                         /* 左右の余白を自動にして真ん中に置く */
+        box-sizing: border-box;
     }
 
     .menu-card {
-        width: 100%;            /* カード全体の幅を指定 */
+        width: 100%;            /* グリッドのセル幅いっぱいに広げる */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* 他のdlやimgの調整はそのまま活かせます */
+}
+
+    /* dl 自体を中央に配置し、テキストも中央揃えにする */
+#menu-img dl {
+    text-align: center;      /* ★dlの中のテキストを中央揃えにする */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* 中身のブロック（メニュー名とDrink/Foodの表示部分）も中央揃えにする */
+.menu-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;      /* ★ここが left になっていると左に寄るので center にする */
+    align-items: center;     /* ★Flexboxで横方向の中央に揃える */
+}
+
+    .menu-card {
+        width: 460px;            /* カード全体の幅を指定 */
         display: flex;
         flex-direction: column;  /* 画像とdlを縦に並べる */
     }

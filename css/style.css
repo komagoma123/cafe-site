@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+html {
+    scroll-behavior: smooth; /* ページ内リンクでなめらかに移動させる */
+}
+
+/* 例：ヘッダーの高さ分（例えば80px）だけ上に余裕を持たせてジャンプさせる */
+#about, #menu, #access {
+    scroll-margin-top: 80px; 
+}
+
 html, body {
     width: 100%;
     margin: 0;
@@ -501,7 +510,6 @@ h3{
 }
 
 @media screen and (max-width: 1100px) {
-    @media screen and (max-width: 1100px) {
     /* メニュー全体の親要素：横幅いっぱいに広げて中身を中央に寄せる */
     .menu-inner {
         width: 100%;
@@ -523,14 +531,11 @@ h3{
         box-sizing: border-box;
     }
 
-    .menu-card {
-        width: 100%;            /* グリッドのセル幅いっぱいに広げる */
+.menu-card {
+        width: 410px;            /* カード全体の幅を指定 */
         display: flex;
-        flex-direction: column;
+        flex-direction: column;  /* 画像とdlを縦に並べる */
     }
-    
-    /* 他のdlやimgの調整はそのまま活かせます */
-}
 
     /* dl 自体を中央に配置し、テキストも中央揃えにする */
 #menu-img dl {
@@ -547,11 +552,7 @@ h3{
     align-items: center;     /* ★Flexboxで横方向の中央に揃える */
 }
 
-    .menu-card {
-        width: 460px;            /* カード全体の幅を指定 */
-        display: flex;
-        flex-direction: column;  /* 画像とdlを縦に並べる */
-    }
+    
 
     /* ★ ここを追加・調整：画像幅をカード（＝dl）と同じ100%にする */
     #menu-img img {

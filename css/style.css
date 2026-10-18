@@ -488,14 +488,16 @@ h3{
 
 @media screen and (max-width: 1100px) {
     #menu-img {
-        display: flex;
-        flex-wrap: wrap;         /* 折り返しを有効にする */
-        justify-content: center;
-        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(2,492px);/* 340pxのカードを3列並べる（入らなくなったら自動で折り返し） */
+        justify-content: center;                /* ★ コンテナ全体を中央に配置する */
+        gap: 80px 20px;                         /* 上下の隙間 30px, 左右の隙間 20px */
+        max-width: 1100px;
+        margin: 0 auto;
     }
 
     .menu-card {
-        width: 340px;            /* カード全体の幅を指定 */
+        width: 100%;            /* カード全体の幅を指定 */
         display: flex;
         flex-direction: column;  /* 画像とdlを縦に並べる */
     }
@@ -503,7 +505,7 @@ h3{
     /* ★ ここを追加・調整：画像幅をカード（＝dl）と同じ100%にする */
     #menu-img img {
         width: 100%;             
-        height: 120px;
+        height: 160px;
         object-fit: cover;
         border-radius: 8px 8px 0 0; /* 画像の上の角を丸くする */
     }

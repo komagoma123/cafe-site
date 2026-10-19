@@ -46,3 +46,26 @@ faqCards.forEach(card => {
         card.classList.toggle('is-open');
     });
 });
+
+// 1. スクロールされるたびに、現在の縦の位置をブラウザの「sessionStorage」に保存する
+window.addEventListener('scroll', () =>{
+    sessionStorage.setItem('scrollPos', window.scrollY);
+});
+
+//sessionStrageはStorageというクラスから作られたオブジェクトである
+//setItemはデータを保存って意味
+//window.scrollYはウィンドウの縦の位置のこと
+//scrollPosはデータの名前（キー）のことであり、ついさっき開発者が名前を付けた。名前の由来は「Scroll Position（スクロール・ポジション）」の略。
+//キーはデータを引き出すときに必要な呼び出す名前のこと
+
+// 2. ページが読み込まれたとき、保存した位置があればそこに一瞬で戻す
+window.addEventListener('load', () =>{
+    const savedPos = sessionStorage.getItem('scrollPos');
+    if (savedPos !== null){
+        // スムーズスクロールを切って、一瞬で元の位置にジャンプさせる
+        window.scrollTo(0, parseInt(savedPos, 10));
+    }
+});
+
+//scrollToはウィンドウを指定したスクロール位置に一瞬で移動させるメソッド（命令）のこと
+//スクロール位置は縦の位置のこと

@@ -149,6 +149,10 @@ nav a{
 
 #about img{
     border-radius: 7px;
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 7px;
 }
 
 #menu{
@@ -206,7 +210,8 @@ nav a{
     display: flex;
     flex-direction: column;
     gap: 0;
-    height: 200px;
+    width: 160px;
+    height: 280px;
 }
 
 .menu-card.is-hidden{
@@ -226,7 +231,7 @@ nav a{
     padding: 5px;
     border-radius: 4px;
     text-align: left;
-    height: 145px;
+    height: 130px;
     line-height: 2;
 }
 

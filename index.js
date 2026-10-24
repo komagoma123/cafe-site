@@ -69,3 +69,38 @@ window.addEventListener('load', () =>{
 
 //scrollToはウィンドウを指定したスクロール位置に一瞬で移動させるメソッド（命令）のこと
 //スクロール位置は縦の位置のこと
+
+$(function(){
+    $(".hamburger-menu, .close-btn, .sp-menu a, .overlay").on("click", function(){
+
+            $(".hamburger-menu").toggleClass("open");
+            $("body").toggleClass("menu-open");
+        
+            let rightVal = $(".hamburger-menu").hasClass("open") ? 0 : -280;
+
+        $(".sp-menu").stop().animate({
+            right: rightVal
+        }, 200);
+    });
+});
+
+$(function(){
+    // 1. ページが少しでもスクロールされたときの処理
+    $(window).on("scroll", function(){
+        // 100px以上スクロールしたら
+        if ($(this).scrollTop() > 100) {
+            $("#page-top").addClass("is-show"); // ボタンを表示
+        } else {
+            $("#page-top").removeClass("is-show"); // ページの一番上にいるときは隠す
+        }
+    });
+
+    // 2. ボタンがクリックされたときの処理
+    $("#page-top").on("click", function(){
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // ブラウザ標準のなめらかなスクロールを使う
+        });
+        return false;
+    });
+});

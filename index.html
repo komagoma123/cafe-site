@@ -19,19 +19,30 @@
         <button id="button-reserve">Reserve</button>
         </div>
 
+        <div id="wrapper-hamburger">
         <div class="hamburger-menu">
             <span></span>
             <span></span>
             <span></span>
         </div>
 
+        <div class="overlay"></div>
+        
+
         <nav class="sp-menu">
+            <div class="close-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
             <a href="#about">About</a>
             <a href="#menu">Menu</a>
-            <a href="access">Access</a>
+            <a href="#access">Access</a>
         </nav>
-
+        </div>
     </header>
+
     <main>
         <section id="hero">
         <!--絶対値を使って画像の上に文字を載せる。z-indexを使って優先順位を定義-->
@@ -216,6 +227,9 @@
                 </section>
                 </div>
 
+                <div id="page-top">
+                    <span>▲</span>
+                </div>
                 
     </main>
     <footer>
@@ -245,6 +259,7 @@
 
                     </div>
                 </footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>                
 <script src="index.js"></script>
 </body>
 </html>

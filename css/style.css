@@ -1,10 +1,9 @@
 @charset "UTF-8";
 
 html {
-    scroll-behavior: smooth; /* ページ内リンクでなめらかに移動させる */
+    scroll-behavior: smooth; 
 }
 
-/* 例：ヘッダーの高さ分（例えば80px）だけ上に余裕を持たせてジャンプさせる */
 #about, #menu, #access {
     scroll-margin-top: 80px; 
 }
@@ -13,7 +12,7 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* 画面外へのはみ出しをカット */
+    overflow-x: hidden; 
 }
 
 main{
@@ -41,15 +40,13 @@ main{
 }
 
 #page-top:hover{
-    background-color: #1e3f28; /* ホバー時に少し濃くする */
+    background-color: #1e3f28; 
 }
 
-/* 矢印（▲）の見た目 */
 #page-top span {
     font-size: 14px;
 }
 
-/* スクロールされるとJSによってこのクラスがつき、表示される */
 #page-top.is-show {
     opacity: 1;
     visibility: visible;
@@ -72,9 +69,9 @@ header{
 
 #logo{
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 25px;         /* 文字の大きさ（お好みで調整してください） */
-    font-weight: normal;     /* 太字（bold）にせず、すっきりと細めに */
-    letter-spacing: 0.1em;   /* 文字と文字の間隔を少しだけ空けるとおしゃれになります */
+    font-size: 25px;         
+    font-weight: normal;     
+    letter-spacing: 0.1em;   
     text-decoration: none;
     color: #000;
     margin: auto 0;
@@ -102,11 +99,11 @@ nav a{
 }
 
 #button-reserve{
-    background-color: #2c5e3b; /* お好みの緑色を指定してください */
-    color: #fff;               /* 文字の色を白にする */
-    padding: 10px 20px 10px 20px;         /* 上下と左右の余白（これで四角いボタンっぽくなります） */
-    border-radius: 4px;        /* 角を少し丸くする（直角にしたい場合はこの行を消してください） */
-    display: inline-block;     /* 文字の長さに合わせたボタンサイズにする */
+    background-color: #2c5e3b; 
+    color: #fff;               
+    padding: 10px 20px 10px 20px;         
+    border-radius: 4px;        
+    display: inline-block;     
     height: 40px;
     margin: auto 0;
     cursor: pointer;
@@ -137,12 +134,9 @@ nav a{
 
 .hero-content h1{
      font-family: Georgia, "Times New Roman", serif;
-    font-size: 50px;         /* 文字の大きさ（お好みで調整してください） */
-    font-weight: normal;     /* 太字（bold）にせず、すっきりと細めに */
-    letter-spacing: 0.1em;   /* 文字と文字の間隔を少しだけ空けるとおしゃれになります. 
-
-    ・font-sizeにemを使う場合→親要素のフォントサイズが基準になる
-    ・font-size以外(letter-spacingやpaddingなど)にemを使う場合→その要素自信のフォントサイズが基準になる*/
+    font-size: 50px;         
+    font-weight: normal;     
+    letter-spacing: 0.1em;   
 }
 
 .hero-content p{
@@ -160,8 +154,8 @@ nav a{
 }
 
 .underline {
-    border-bottom: 2px solid #000; /* 下線の太さと色（お好みで変更してください） */
-    padding-bottom: 4px;              /* 文字と下線の間の隙間 */
+    border-bottom: 2px solid #000; 
+    padding-bottom: 4px;              
 }
 
 #about{
@@ -176,9 +170,9 @@ nav a{
 
 #about h2{
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 35px;         /* 文字の大きさ（お好みで調整してください） */
-    font-weight: normal;     /* 太字（bold）にせず、すっきりと細めに */
-    letter-spacing: 0.1em;   /* 文字と文字の間隔を少しだけ空けるとおしゃれになります */
+    font-size: 35px;         
+    font-weight: normal;     
+    letter-spacing: 0.1em;   
 }
 
 #about img{
@@ -209,9 +203,9 @@ nav a{
 
 .menu-header h2{
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 35px;         /* 文字の大きさ（お好みで調整してください） */
-    font-weight: normal;     /* 太字（bold）にせず、すっきりと細めに */
-    letter-spacing: 0.1em;   /* 文字と文字の間隔を少しだけ空けるとおしゃれになります */
+    font-size: 35px;         
+    font-weight: normal;     
+    letter-spacing: 0.1em;   
 }
 
 #menu-txt{
@@ -284,31 +278,31 @@ dd{
     text-align: left;
     gap: 40px;
     max-width: 1100px;
-    width: 100%;             /* 画面に合わせて縮むように追加 */
+    width: 100%;             
     margin: 0 auto;
     padding: 50px 20px;
-    box-sizing: border-box;  /* パディングを含めた幅計算にする */
+    box-sizing: border-box;  
 }
 
 #faq img {
-    max-width: 350px;        /* 固定幅 width: 350px; から max-width に変更 */
+    max-width: 350px;        
     width: 100%;
-    height: 280px;            /* アスペクト比を維持 */
+    height: 280px;            
     object-fit: cover;
     border-radius: 8px;
 }
 
 .inner-faq {
-    flex: 1;                 /* 残りの幅いっぱいに広がるようにする */
-    min-width: 0;            /* flex内の崩れ防止 */
+    flex: 1;                 
+    min-width: 0;            
     margin-top: -37px;
 }
 
 .inner-faq h2{
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 35px;         /* 文字の大きさ（お好みで調整してください） */
-    font-weight: normal;     /* 太字（bold）にせず、すっきりと細めに */
-    letter-spacing: 0.1em;   /* 文字と文字の間隔を少しだけ空けるとおしゃれになります */
+    font-size: 35px;         
+    font-weight: normal;     
+    letter-spacing: 0.1em;   
 }
 
 
@@ -322,8 +316,8 @@ dd{
     padding: 15px 20px;
     margin-bottom: 15px;
     line-height: 2;
-    width: 100%;             /* ★重要： width: 600px; から width: 100%; に変更 */
-    box-sizing: border-box;  /* 枠線とパディングを幅に含める */
+    width: 100%;             
+    box-sizing: border-box;  
     cursor: pointer;
 }
 
@@ -359,8 +353,8 @@ dd{
 .faq-icon{
     font-size: 14px;
     color: #333;
-    display: inline-block;        /* 変形（transform）を効かせるために必要です */
-    transform: scale(1.9, 0.8) translateY(-9px);   /* (横方向の広がり, 縦方向の潰し加減) です */
+    display: inline-block;        
+    transform: scale(1.9, 0.8) translateY(-9px);   
     transition: transform 0.3s;
 }
 
@@ -412,8 +406,8 @@ h3{
 
 #access h2{
     font-family: Georgia, "Times New Roman", serif;
-    font-weight: normal;     /* 太字（bold）にせず、すっきりと細めに */
-    letter-spacing: 0.1em;   /* 文字と文字の間隔を少しだけ空けるとおしゃれになります */
+    font-weight: normal;     
+    letter-spacing: 0.1em;   
 }
 
 #access img{
@@ -438,15 +432,15 @@ h3{
 
 #contact h2{
     font-family: Georgia, "Times New Roman", serif;
-    font-weight: normal;     /* 太字（bold）にせず、すっきりと細めに */
-    letter-spacing: 0.1em;   /* 文字と文字の間隔を少しだけ空けるとおしゃれになります */
+    font-weight: normal;     
+    letter-spacing: 0.1em;   
     text-align: left;
 }
 
 #contact input,
 #contact textarea {
-    width: 100%;           /* フォームの幅いっぱいに広げる */
-    box-sizing: border-box; /* 枠線や余白を含めて幅をきれいに収める */
+    width: 100%;           
+    box-sizing: border-box; 
 }
 
 #send{
@@ -468,7 +462,7 @@ h3{
 }
 
 .wrapper-form{
-    text-align: left;        /* ラベルや入力欄を包む親を左寄せにする */
+    text-align: left;        
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -545,13 +539,11 @@ h3{
     margin: 0 10px;
 }
 
-/*スマホ用メニューを非表示*/
 .sp-menu{
     display: none;
 }
 
 @media screen and (max-width: 1100px) {
-    /* メニュー全体の親要素：横幅いっぱいに広げて中身を中央に寄せる */
     .menu-inner {
         width: 100%;
         max-width: 1100px;
@@ -562,52 +554,45 @@ h3{
 
     #menu-img {
         display: grid;
-        /* カード幅を少しコンパクトにするか、画面幅に合わせて収まるように調整します */
         grid-template-columns: repeat(2, minmax(280px, 460px)); 
-        justify-content: center;                /* グリッド全体を中央に配置 */
-        gap: 40px 20px;                         /* 上下の隙間、左右の隙間 */
+        justify-content: center;                
+        gap: 40px 20px;                         
         width: 100%;
-        max-width: 1000px;                      /* 2列が綺麗に収まる最大幅 */
-        margin: 0 auto;                         /* 左右の余白を自動にして真ん中に置く */
+        max-width: 1000px;                      
+        margin: 0 auto;                         
         box-sizing: border-box;
     }
 
 .menu-card {
-        width: 410px;            /* カード全体の幅を指定 */
+        width: 410px;            
         display: flex;
-        flex-direction: column;  /* 画像とdlを縦に並べる */
+        flex-direction: column;  
     }
 
-    /* dl 自体を中央に配置し、テキストも中央揃えにする */
 #menu-img dl {
-    text-align: center;      /* ★dlの中のテキストを中央揃えにする */
+    text-align: center;      
     margin: 0 auto;
     box-sizing: border-box;
 }
 
-/* 中身のブロック（メニュー名とDrink/Foodの表示部分）も中央揃えにする */
 .menu-info {
     display: flex;
     flex-direction: column;
-    text-align: center;      /* ★ここが left になっていると左に寄るので center にする */
-    align-items: center;     /* ★Flexboxで横方向の中央に揃える */
+    text-align: center;      
+    align-items: center;     
 }
 
-    
-
-    /* ★ ここを追加・調整：画像幅をカード（＝dl）と同じ100%にする */
     #menu-img img {
         width: 100%;             
         height: 160px;
         object-fit: cover;
-        border-radius: 8px 8px 0 0; /* 画像の上の角を丸くする */
+        border-radius: 8px 8px 0 0; 
     }
 
-    /* dlの幅もカードに合わせて100%にする */
     #menu-img dl {
         width: 100%;
         box-sizing: border-box;
-        border-radius: 0 0 8px 8px; /* 画像の下の角に合わせてdlの下を丸くすると綺麗です */
+        border-radius: 0 0 8px 8px; 
     }
 }
 
@@ -630,7 +615,6 @@ h3{
         display: block;
     }
 
-    /* ヘルパー・ヘッダー全体の調整 */
     header {
         display: flex;
         align-items: center;
@@ -642,16 +626,14 @@ h3{
         gap: 0;
     }
 
-    /* PC用メニューを確実に非表示にする */
     #header-inner {
-        display: none !important; /* なかなか効かない場合は !important をつけると確実に消えます */
+        display: none !important; 
     }
 
     #logo {
     font-size: 20px;
 }
 
-    /* ハンバーガーボタンを表示 */
     .hamburger-menu {
         display: flex !important;
         flex-direction: column;
@@ -672,7 +654,6 @@ h3{
     transform: translateY(-8px) rotate(-45deg);
 }
 
-    /* ３本線デザイン */
     .hamburger-menu span {
         display: block;
         width: 100%;
@@ -681,7 +662,6 @@ h3{
         border-radius: 2px;
     }
 
-    /* スマホ用メニューの初期スタイル */
     .sp-menu {
         display: block;
         position: fixed;
@@ -762,28 +742,24 @@ h3{
     font-size: 12px;
 }
 
-/* #aboutをCSS Gridにして、2列×2行のレイアウトにする */
     #about {
         display: grid;
-        grid-template-columns: auto 1fr; /* 1列目: 画像の幅, 2列目: h2の幅 */
-        gap: 15px 20px; /* 上下の隙間 15px, 左右の隙間 20px */
-        align-items: center; /* 画像とh2の上下位置を中央に揃える */
+        grid-template-columns: auto 1fr; 
+        gap: 15px 20px; 
+        align-items: center; 
     }
 
-    /* 画像：1列目・1行目に配置 */
     #about img {
         grid-column: 1;
         grid-row: 1;
-        width: 150px; /* お好みの画像サイズに調整してください */
+        width: 150px; 
         height: auto;
     }
 
-    /* #about-text：中の要素を解体してGridに参加させる */
     #about-text {
-        display: contents; /* 親のdivの枠組みを無視して、中身(h2とp)を直接Gridに配置する */
+        display: contents; 
     }
 
-    /* h2（Aboutの見出し）：2列目・1行目に配置（画像の右隣） */
     #about h2 {
         grid-column: 2;
         grid-row: 1;
@@ -791,10 +767,9 @@ h3{
         font-size: 24px;
     }
 
-    /* p（本文）：1列目から2列目までぶち抜き（画像の真下・左端揃え） */
     #about p {
-        grid-column: 1 / -1; /* 1列目から最後まで横幅いっぱい使う */
-        grid-row: 2;         /* 2行目（画像の真下）に配置 */
+        grid-column: 1 / -1; 
+        grid-row: 2;         
         margin: 0;
         font-size: 12px;
         line-height: 1.6;
@@ -814,12 +789,11 @@ h3{
         height: 34px;
     }
 
-    /* メニュー全体のコンテナを縦並びに変更する */
     #menu-img {
         display: flex;
-        flex-direction: column; /* 横並びから「縦並び」にする */
-        align-items: center;    /* カードを中央に寄せる（左寄せにしたい場合は flex-start にしてください） */
-        gap: 20px;              /* カードとカードの上下の隙間をあける */
+        flex-direction: column; 
+        align-items: center;    
+        gap: 20px;              
         width: 100%;
         flex-wrap: wrap;
         justify-content: center;
@@ -828,31 +802,30 @@ h3{
     #menu-img img{
         width: 104px;
         height: 80px;
-        border-radius: 8px; /* 左上・左下だけ角丸にし、右側は直角にしてdlとくっつける */
-        flex-shrink: 0;             /* 画像が潰れないように保護 */
+        border-radius: 8px; 
+        flex-shrink: 0;             
     }
 
     #menu-img dl{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;                /* ★残りの横幅をいっぱいに使う */
+        width: 100%;                
         height: 70px;box-sizing: border-box;
-        border-radius: 0 8px 8px 0; /* 右上・右下だけ角丸にする */
+        border-radius: 0 8px 8px 0; 
         margin: 0;
-        padding: 10px 15px;         /* 内側の文字の余白 */
+        padding: 10px 15px;         
         background-color: #faf9f9;;
     }
 
-    /* 画像と説明文（dl）の横並びを維持する調整 */
     .menu-card {
         width: 100%;
-        max-width: none;       /* ★320pxの制限を解除して画面幅いっぱいにする */
-        height: auto;           /* 高さを自動にしてテキストがはみ出さないようにする */
+        max-width: none;       
+        height: auto;           
         display: flex;
-        flex-direction: row;    /* 画像と説明文の横並びを維持 */
-        gap: 0px;              /* 画像と説明文の間の隙間 */
-        align-items: stretch;  /* 画像とdlの高さをぴったり揃える */
+        flex-direction: row;    
+        gap: 0px;              
+        align-items: stretch;  
     }
 
     .menu-card dl{
@@ -932,7 +905,7 @@ h3{
         gap: 20px;
         position: relative;
         flex-direction: column;
-        height: 140px;                  /* ★フッターの高さをここで調整できます */
+        height: 140px;                  
         padding: 20px 20px;
         border-radius: 8px;
         justify-content: space-between;
@@ -948,7 +921,7 @@ h3{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;        /* 横方向の中央揃え */
+        justify-content: center;        
         width: 100%;
         margin: 14;
         gap: 10px;
@@ -975,7 +948,7 @@ h3{
     #footer-logo a {
         color: #fff;
         text-decoration: none;
-        font-size: 18px;                /* 必要に応じてロゴの文字サイズ調整 */
+        font-size: 18px;                
     }
 
     #icon{
